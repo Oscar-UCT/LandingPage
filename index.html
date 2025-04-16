@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Landing Page</title>
+    <script defer src="./assets/js/script.js"></script>
+</head>
+<body>
+    <div id="flotante-contenedor">
+        <div class="flotante-contenido">
+            <button id="btn-cerrar" onclick="CerrarVentanaPreorden()">X</button>
+            <h2>Ingrese sus datos</h2>
+            <form action="" onsubmit="AñadirOrden()">
+                <label for="nombre">Nombre</label>
+                <br>
+                <input type="text" name="nombre" placeholder="Nombre completo" required>
+                <br>
+                <label for="correo">Correo</label>
+                <br>
+                <input type="email" name="correo" placeholder="correo@gmail.com" required>
+                <br>
+                <button type="submit" id="btn-preordenar">Preordenar</button>
+            </form>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div>
+                <a href="#">TecnoStore</a>
+                <a href="#">Productos</a>
+                <a href="#">Tiendas</a>
+            </div>
+            <div>
+                <a href="#">Contáctanos</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Pedidos</a>
+            </div>
+        </nav>
+    </header>
+    <section id="producto-destacado">
+        <h2>Pronto Disponible</h2>
+        <span onclick="VentanaPreorden()">Preordenar →</span>
+    </section>
+
+
+    <footer>
+        <h2>Prototipo</h2>
+    </footer>
+</body>
+</html>
