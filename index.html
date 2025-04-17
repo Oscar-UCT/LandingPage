@@ -8,10 +8,14 @@
     <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
+    <!--Ventana oculta hasta que el usuario seleccione preordenar-->
     <div id="flotante-contenedor">
         <div class="flotante-contenido">
+            <!--Botón que cierra la ventana-->
             <button id="btn-cerrar" onclick="CerrarVentanaPreorden()">X</button>
+
             <h2>Ingrese sus datos</h2>
+            <!--El atributo "required" ahorra tener que validar por Javascript-->
             <form action="" onsubmit="AñadirOrden()">
                 <label for="nombre">Nombre</label>
                 <br>
@@ -27,6 +31,7 @@
     </div>
     <header>
         <nav>
+            <!-- División realizada por elementos en la izquierda y la derecha -->
             <div>
                 <a href="#">TecnoStore</a>
                 <a href="#">Productos</a>
@@ -37,10 +42,13 @@
                 <a href="#">Ayuda</a>
                 <a href="#">Pedidos</a>
             </div>
+            <!--Los links no llevan a ninguna parte-->
         </nav>
     </header>
+    <!--Promoción para preordenar-->
     <section id="producto-destacado">
         <h2>Pronto Disponible</h2>
+        <!--Atributo onclick permite usar este elemento como botón-->
         <span onclick="VentanaPreorden()">Preordenar →</span>
     </section>
 
