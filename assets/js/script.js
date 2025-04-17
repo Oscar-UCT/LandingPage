@@ -3,7 +3,7 @@ function AñadirOrden()
     // Función mock
     event.preventDefault()
     alert("Preorden exitosa")
-    window.location.href = "/index.html"; // Evita que el formulario redirija a la página con un query string
+    window.location.href = "."; // Evita que el formulario redirija a la página con un query string
 }
 
 function VentanaPreorden()
