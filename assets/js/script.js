@@ -1,17 +1,11 @@
-function AñadirOrden()
-{
-    // Función mock
-    event.preventDefault()
-    alert("Preorden exitosa")
-    window.location.href = "."; // Evita que el formulario redirija a la página con un query string
-}
+const form = document.getElementById('formulario-datos');
 
-function VentanaPreorden()
-{
-    document.getElementById("flotante-contenedor").style.display = "flex" // Mostrar ventana de formulario
-}
+    form.addEventListener('submit', function(event) {
+      if (!form.checkValidity()) { // Revisa si los campos están, si no es así, no continua la función.
+        return;
+      }
 
-function CerrarVentanaPreorden()
-{
-    document.getElementById("flotante-contenedor").style.display = "none" // Ocultar ventana de formulario
-}
+      event.preventDefault();
+      alert('¡Gracias por tu preferencia!');
+      window.location.href = 'index.html';
+    });

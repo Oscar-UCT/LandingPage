@@ -4,57 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Landing Page</title>
     <script defer src="./assets/js/script.js"></script>
+    <title>Landing Page</title>
 </head>
 <body>
-    <!--Ventana oculta hasta que el usuario seleccione preordenar-->
-    <div id="flotante-contenedor">
-        <div class="flotante-contenido">
-            <!--Botón que cierra la ventana-->
-            <button id="btn-cerrar" onclick="CerrarVentanaPreorden()">X</button>
-
-            <h2>Ingrese sus datos</h2>
-            <!--El atributo "required" ahorra tener que validar por Javascript-->
-            <form action="" onsubmit="AñadirOrden()">
-                <label for="nombre">Nombre</label>
-                <br>
-                <input type="text" name="nombre" placeholder="Nombre completo" required>
-                <br>
-                <label for="correo">Correo</label>
-                <br>
-                <input type="email" name="correo" placeholder="correo@gmail.com" required>
-                <br>
-                <button type="submit" id="btn-preordenar">Preordenar</button>
-            </form>
-        </div>
-    </div>
     <header>
         <nav>
-            <!-- División realizada por elementos en la izquierda y la derecha -->
-            <div>
-                <a href="#">TecnoStore</a>
-                <a href="#">Productos</a>
-                <a href="#">Tiendas</a>
-            </div>
-            <div>
-                <a href="#">Contáctanos</a>
-                <a href="#">Ayuda</a>
-                <a href="#">Pedidos</a>
-            </div>
-            <!--Los links no llevan a ninguna parte-->
+            <a href="#">Compras</a>
+            <a href="#"><h1>-- TecnoStore --</h1></a>
+            <a href="#">Productos</a>
         </nav>
     </header>
-    <!--Promoción para preordenar-->
-    <section id="producto-destacado">
-        <h2>Pronto Disponible</h2>
-        <!--Atributo onclick permite usar este elemento como botón-->
-        <span onclick="VentanaPreorden()">Preordenar →</span>
+    <section id="seccion-producto-promocion" style="cursor: pointer;" onclick="window.location.href = 'agotado.html'">
+        <div class="promocion-imagen" style="background-image: url(./assets/imgs/ChatGPTphone.png);">
+            <span style="font-size: 4em;">TecnoPhone 14 </span>
+            <span style="color: gold;">30% descuento</span>
+            <span>¡Solo por hoy!</span>
+        </div>
     </section>
-
-
+    <section id="seccion-productos">
+        <h2>Productos</h2>
+        <br>
+        <div id="productos">
+            <div class="tarjeta-producto">
+                <div class="producto-imagen" style="background-image: url(./assets/imgs/ChatGPTphone.png);"></div>
+                <h2>TecnoPhone 14</h2>
+                <span>$999.990</span>
+                <button onclick="window.location.href = 'agotado.html'">Comprar</button>
+            </div>
+            <div class="tarjeta-producto">
+                <div class="producto-imagen" style="background-image: url(./assets/imgs/ChatGPTphone.png);"></div>
+                <h2>TecnoPhone 16</h2>
+                <span>$1.110.000</span>
+                <button onclick="window.location.href = 'agotado.html'">Comprar</button>
+            </div>
+            <div class="tarjeta-producto">
+                <div class="producto-imagen" style="background-image: url(./assets/imgs/ChatGPTphone.png);"></div>
+                <h2>TecnoPhone 17 Pro Max</h2>
+                <span>$1.499.990</span>
+                <button onclick="window.location.href = 'agotado.html'">Comprar</button>
+            </div>
+        </div>
+    </section>
     <footer>
-        <h2>Prototipo</h2>
+        <span>Prototipo Landing Page</span>
     </footer>
 </body>
 </html>
